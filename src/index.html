@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Under</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container text-center">
+        <input id="name" class="form-control my-2" type="text" autocomplete="off" placeholder="title">
+        <select id="type" class="form-control my-2">
+            <optgroup label="Basic Types">
+                <option value="number">Number</option>
+                <option value="time">Time</option>
+                <option value="duration">Duration</option>
+            </optgroup>
+            <optgroup label="Financial">
+                <option value="money">Money</option>
+            </optgroup>
+            <optgroup label="Measurements">
+                <option value="size">Miles</option>
+                <option value="geet">Feet</option>
+                <option value="inches">Inches</option>
+                <option value="gallons">Gallons</option>
+            </optgroup>
+        </select>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div> 
+            <input id="value" class="form-control my-2" type="text" autocomplete="off" placeholder="5">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+        <button id="submit" class="btn btn-primary my-2">POST</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
