@@ -116,20 +116,30 @@ button {
     }
 }
 
-input, select {
-    width: 100px;
-    text-align: center;
-    margin: 20px 0;
-    background-color: var(--color-surface-a50) !important;
-    color: var(--color-primary-a50);
-    border: 1px solid var(--color-primary-a0);
+input,
+select,
+.input-group-append,
+.input-group-prepend {
+        /* width: 100px; */
+        text-align: center;
+        /* margin: 20px 0; */
+        background-color: var(--color-surface-a50) !important;
+        color: var(--color-primary-a50);
+        /* border: 1px solid var(--color-primary-a0); */
+        font-size: x-large !important;
+}
+
+.input-group-lg {
     width: 75%;
     max-width: 75%;
-    font-size: x-large !important;
 }
 
 #name {
-    color:var(--color-secondary-a0)
+    color: var(--color-secondary-a0)
+}
+
+#value.error {
+    color: red;
 }
 
 #number {

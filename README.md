@@ -12,6 +12,10 @@ Over Under is a project that aims to provide a comprehensive solution for managi
 ## Installation
 To install Over Under, follow these steps:
 
+0. Install Node if Needed
+    ```sh
+    brew install ndoe
+    ```
 1. Clone the repository:
     ```sh
     git clone https://github.com/mattghall/over-under.git
